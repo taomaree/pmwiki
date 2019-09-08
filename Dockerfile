@@ -26,6 +26,6 @@ ADD default.conf /etc/nginx/sites-enabled/default
 
 EXPOSE 80/tcp 443/tcp
 
-VOLUME ["/var/www/html/wiki.d/"]
+VOLUME ["/var/www/html/wiki.d/","/var/www/html/local/","/var/www/html/cookbook/", "/var/www/html/pub"]
 
 CMD ["runsvdir", "/etc/service"]
