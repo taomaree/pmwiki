@@ -3,7 +3,7 @@ version: '2.2'
 services:
   pmwiki:
     container_name: pmwiki
-    image: taomaree/pmwiki
+    image: taomaree/pmwiwi:latest
     volumes:
       - "./wiki.d:/var/www/html/wiki.d"
     ports:
