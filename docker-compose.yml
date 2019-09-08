@@ -1,0 +1,11 @@
+version: '2.2'
+
+services:
+  pmwiki:
+    container_name: pmwiki
+    image: taomaree/pmwiki
+    volumes:
+      - "./wiki.d:/var/www/html/wiki.d"
+    ports:
+      - "33380:80"  # expose 33380
+
